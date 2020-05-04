@@ -7,6 +7,13 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    const arr = str.split('')
+
+    return arr.every((character, index) => {
+        const opposite = arr[arr.length - 1 - index]
+        return character === opposite
+    })
+}
 
 module.exports = palindrome;
