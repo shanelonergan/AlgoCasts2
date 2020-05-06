@@ -8,7 +8,7 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 function capitalize(str) {
-    strArr = str.split('')
+    const strArr = str.split('')
 
     strArr.forEach((char, index) => {
         const previous = strArr[index - 1]
