@@ -21,8 +21,6 @@ function chunk(array, size) {
             chunkArr = []
         }
     }
-
-    console.log(output, size)
     return output
 }
 
